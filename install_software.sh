@@ -94,7 +94,7 @@ if [[ $distribution =~ "Debian" ]]; then
 		echo -e "Installing 'pip2'"
 		$installer install -y python-pip &> pip_install.log
 	fi
-	pip2 install --upgrade pip &>> pip_install.log
+	#pip2 install --upgrade pip &>> pip_install.log
 else
 	if ! [ -x "$(command -v pip2.7)" ]; then
 		echo -e "Installing 'pip'"
